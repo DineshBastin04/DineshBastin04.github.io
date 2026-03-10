@@ -475,11 +475,11 @@
       padding: 1.5rem 2rem;
       border-bottom: 1px solid var(--border);
       background: var(--card);
-      transition: background 0.2s;
+      transition: background 0.2s, padding-left 0.2s;
       cursor: pointer;
     }
     .blog-item:last-child { border-bottom: none; }
-    .blog-item:hover { background: #010d03; }
+    .blog-item:hover { background: #010d03; padding-left: 2.5rem; }
     .blog-item:hover .blog-title { color: var(--green); }
 
     .blog-date { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
@@ -796,7 +796,7 @@
     <button class="filter-btn" onclick="filterBlog('tutorial',this)">tutorial</button>
   </div>
 
-  <div class="blog-featured reveal" data-cat="ai tutorial">
+  <div class="blog-featured reveal" data-cat="ai tutorial" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_llm-rag-quantization-activity-7432007631461974016-dUbX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')" style="cursor:pointer;">
     <div class="blog-featured-label">Pinned · Featured Post</div>
     <div class="blog-featured-title">4-bit vs 6-bit vs Full Precision LLaMA in a Real RAG System — Here's What Actually Happened</div>
     <p class="blog-featured-desc">Most posts say quantization reduces memory. True. But we tested all three inside a retrieval-heavy production-style RAG pipeline — not toy prompts, real constraint-based responses. 6-bit is the sweet spot. Here's why.</p>
@@ -808,32 +808,32 @@
   </div>
 
   <div class="blog-list reveal">
-    <div class="blog-item" data-cat="ai">
+    <div class="blog-item" data-cat="ai" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_agenticai-supplychainai-enterpriseai-activity-7427750877706502147-mHpu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">OmniChain AI — Building a Multi-Agent Platform for Proactive Supply Chain Intelligence</div>
       <div class="blog-right"><span class="blog-meta">⏱ 6 min</span><span class="blog-cat">AI</span></div>
     </div>
-    <div class="blog-item" data-cat="ai python tutorial">
+    <div class="blog-item" data-cat="ai python tutorial" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_just-launched-an-open-source-tool-to-catch-activity-7340354583770144769-oM5l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">SQL Hallucination Detector — Using LLM-as-Judge to Catch Bad Queries Before They Hit Production</div>
       <div class="blog-right"><span class="blog-meta">⏱ 5 min</span><span class="blog-cat">Python</span></div>
     </div>
-    <div class="blog-item" data-cat="ai python tutorial">
+    <div class="blog-item" data-cat="ai python tutorial" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_just-launched-iluprompt-an-open-source-activity-7350225629557968896-8PiG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">IluPrompt — Open-Source Prompt Engineering Tool with Few-Shot, CoT & RAG Support</div>
       <div class="blog-right"><span class="blog-meta">⏱ 5 min</span><span class="blog-cat">Tutorial</span></div>
     </div>
-    <div class="blog-item" data-cat="ai python">
+    <div class="blog-item" data-cat="ai python" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_ai-deeplearning-opensource-activity-7411790695004401664-_5WX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">AI Image Authenticity Detector — Deepfake Detection with Vision Transformers</div>
       <div class="blog-right"><span class="blog-meta">⏱ 6 min</span><span class="blog-cat">AI</span></div>
     </div>
-    <div class="blog-item" data-cat="ai nlp tutorial">
+    <div class="blog-item" data-cat="ai nlp tutorial" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_ai-chatbots-rag-activity-7337568541958643713-9Cq2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">RAG Chatbots Explained — How Retrieval, Augmentation & Generation Work Together</div>
       <div class="blog-right"><span class="blog-meta">⏱ 4 min</span><span class="blog-cat">NLP</span></div>
     </div>
-    <div class="blog-item" data-cat="ai">
+    <div class="blog-item" data-cat="ai" onclick="window.open('https://www.linkedin.com/posts/dinesh-bastin-220057260_insights-from-kissflows-cto-talk-on-ai-activity-7426934412648321024-keYc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAURXgBcuKJRxiKM4tsanGC0c3MOq2FhyE','_blank')">
       <div class="blog-date">2025</div>
       <div class="blog-title">Key Takeaways from Kissflow's CTO Talk — Agentic AI, RAG, MCP & What's Coming Next</div>
       <div class="blog-right"><span class="blog-meta">⏱ 4 min</span><span class="blog-cat">AI</span></div>
@@ -903,7 +903,7 @@
       Open to interesting projects, collaborations, and conversations about AI systems.<br/>Drop a message and I'll get back to you.
     </p>
     <div class="contact-links">
-      <a href="mailto:bastindinesh@gmail.com" class="contact-link">↗ bastindinesh@gmail.com</a>
+      <a href="javascript:void(0)" id="emailLink" class="contact-link">↗ click to email</a>
       <a href="https://www.linkedin.com/in/dinesh-bastin-220057260" target="_blank" class="contact-link">↗ LinkedIn</a>
       <a href="https://github.com/DineshBastin04" target="_blank" class="contact-link">↗ GitHub</a>
     </div>
@@ -916,7 +916,7 @@
   <div class="footer-url">dineshbastin04.github.io</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // MATRIX RAIN
   const canvas = document.getElementById('matrixCanvas');
   const ctx = canvas.getContext('2d');
@@ -1019,6 +1019,15 @@
       }
     }, 45);
   });
+
+  // EMAIL — built in JS so Cloudflare never sees it
+  const u = 'bastindinesh', d = 'gmail', t = 'com';
+  const emailEl = document.getElementById('emailLink');
+  if (emailEl) {
+    const addr = u + '\u0040' + d + '.' + t;
+    emailEl.textContent = '\u2197 ' + addr;
+    emailEl.href = 'mailto:' + addr;
+  }
 </script>
 </body>
 </html>
